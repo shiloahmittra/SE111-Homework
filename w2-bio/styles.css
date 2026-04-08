@@ -1,0 +1,54 @@
+#main{
+    text-align: center;
+    border: 5px solid purple;
+
+    width: 1000px;
+
+    height: 500px;
+    background-color: lightblue;
+}
+
+
+
+
+#header{
+    height: 50px;
+    border: 5px solid red;
+
+    color: black;
+
+    text-align: center;
+
+    padding-bottom: 25px;
+}
+
+
+
+
+#nav-bar{
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    border-top: 12px solid cyan;
+    border-bottom: 12px solid cyan;
+}
+
+
+.nav-btn{
+    border: 4px dotted black;
+    padding: 6px
+}
+
+
+body{
+    background-color: lightblue;
+}
+
+h2{
+    color:red;
+}
+
+footer{
+    text-align: center;
+}
