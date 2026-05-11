@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pay Calculator</title>
+</head>
+
+<body>
+
+</body>
+
+<script>
+
+    function multiply(x, y) {
+        return (x * y)
+    }
+
+    function subtract(x, y) {
+        return (x - y)
+    }
+
+    // Collect user input
+    var hourlyPay = Number(prompt("Enter your hourly pay:"));
+    var hoursWorked = Number(prompt("Enter hours worked for two weeks:"));
+    var taxRate = Number(prompt("Enter your tax rate as a decimal:\nExample: 0.20 for 20%"));
+
+    // Calculations (run once)
+    var grossPay = multiply(hourlyPay, hoursWorked);
+    var uncleSam = multiply(grossPay, taxRate);
+    var netPay = subtract(grossPay, uncleSam);
+
+    // Console output
+    console.log("Gross Pay: " + grossPay);
+    console.log("Uncle Sam's Share: " + uncleSam);
+    console.log("Net Pay: " + netPay);
+
+    // Alert output
+    alert(
+        "Gross Pay: " + grossPay +
+        "\nUncle Sam's Share: " + uncleSam +
+        "\nNet Pay: " + netPay
+    );
+
+</script>
+
+</html>

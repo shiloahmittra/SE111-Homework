@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Week 7 | MORE JAVASCRIPTS</h1>
+
+    <h2>Current Number</h2>
+    <h2 id="number">0</h2>
+    <hr>
+
+
+    <!-- Setting up Buttons -->
+    <input type="button" id="increment" value="Increase">
+    <input type="button" id="decrement" value="Decrease">
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <!-- Setting up a joke container -->
+    <div id="jokeContainer">
+        <!-- Question div -->
+        <div id="question">
+            <h2>Why did the scarecrow get a promotion?</h2>
+        </div>
+
+        <!-- Answer div -->
+        <div id="answer">
+
+        </div>
+        <!-- The button -->
+        <input type="button" id="giveAnswer" value="Why?">
+    </div>
+
+    <script>
+        // Getting the number text
+        var numberText = document.querySelector("#number")
+
+        // Getting the buttons
+        var increaseButton = document.querySelector("#increment")
+        var decreaseButton = document.querySelector("#decrement")
+
+        // The current number
+        var currentNumber = 0;
+
+        function addToNumber() {
+            currentNumber++;
+            numberText.innerHTML = currentNumber
+        }
+
+        function subtractFromNumber() {
+            currentNumber--;
+            numberText.innerHTML = currentNumber
+        }
+
+        // Adding event listeners
+        increaseButton.addEventListener("click", addToNumber)
+        decreaseButton.addEventListener("click", subtractFromNumber)
+
+        // Getting the button and the answer container
+        var giveJokeAnswer = document.querySelector("#giveAnswer")
+        var answerContainer = document.querySelector("#answer")
+
+        function giveAnswer() {
+            // Adding to the container
+            answerContainer.innerHTML += "<h3>He was OUTSTANDING in his field</h3>"
+        }
+
+        // Setting an event listener
+        giveJokeAnswer.addEventListener("click", giveAnswer)
+
+    </script>
+
+</body>
+
+</html>

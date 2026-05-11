@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+<script>
+
+    function add(x, y) {
+        return (x + y)
+    }
+    function subtract(x, y) {
+        return (x - y)
+    }
+    function multiply(x, y) {
+        return (x * y)
+    }
+    function divide(x, y) {
+        return (x / y)
+    }
+
+    var userSelection = prompt("Do you want to add, subtract, multiply, or divide?")
+    var firstNumber = Number(prompt("What is your first number?"))
+    var secondNumber = Number(prompt("What is your second number?"))
+
+    if (userSelection === "add") { console.log(add(firstNumber,secondNumber)) }
+
+    if (userSelection === "subract") { console.log(subtract(firstNumber,secondNumber)) }
+
+    if (userSelection === "multiply") { console.log(multiply(firstNumber,secondNumber)) }
+
+    if (userSelection === "divide") { console.log(divide(firstNumber,secondNumber)) }
+
+
+
+
+</script>
+
+</html>
